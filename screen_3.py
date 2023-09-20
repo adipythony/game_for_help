@@ -53,7 +53,11 @@ def text():
     Hebrew = Font.render("Hebrew", True, always.FONT_COLOR)
     screen_3.blit(Hebrew, (995, 175))
     Bible = Font.render("Bible", True, always.FONT_COLOR)
-    screen_3.blit(Bible, (175, 525))
+    screen_3.blit(Bible, (190, 525))
+    literature = Font.render("literature", True, always.FONT_COLOR)
+    screen_3.blit(literature, (500, 525))
+    citizenship = Font.render("citizenship", True, always.FONT_COLOR)
+    screen_3.blit(citizenship, (835, 525))
     pygame.display.flip()
     return
 

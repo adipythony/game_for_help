@@ -4,13 +4,13 @@ screen_3 = always.SCREEN_3
 x = 150
 y = 150
 
-def open_screen_3(SCREEN_3):
+def open_screen_3():
     pygame.init()
     dict_3 = {'running' : True}
     screen_3.fill(always.BACKGROUND_COLOR)
-    draw_outside_rect()
-    draw_iner_rect()
-    text()
+    draw_outside_rect_3()
+    draw_iner_rect_3()
+    text_3()
     pygame.display.flip()
     while dict_3['running']:
         for event in pygame.event.get():
@@ -20,7 +20,7 @@ def open_screen_3(SCREEN_3):
 
 
 
-def draw_outside_rect():
+def draw_outside_rect_3():
     pygame.draw.rect(screen_3, always.SQUARE_COLOR, pygame.Rect(50, 100, 250, 200))
     pygame.draw.rect(screen_3, always.SQUARE_COLOR, pygame.Rect(350, 100, 250, 200))
     pygame.draw.rect(screen_3, always.SQUARE_COLOR, pygame.Rect(650, 100, 250, 200))
@@ -30,7 +30,7 @@ def draw_outside_rect():
     pygame.draw.rect(screen_3, always.SQUARE_COLOR, pygame.Rect(815, 450, 250, 200))
     return
 
-def draw_iner_rect():
+def draw_iner_rect_3():
     pygame.draw.rect(screen_3, always.INER_SQUARE_COLOR, pygame.Rect(70, 120, 210, 160))
     pygame.draw.rect(screen_3, always.INER_SQUARE_COLOR, pygame.Rect(370, 120, 210, 160))
     pygame.draw.rect(screen_3, always.INER_SQUARE_COLOR, pygame.Rect(670, 120, 210, 160))
@@ -39,7 +39,7 @@ def draw_iner_rect():
     pygame.draw.rect(screen_3, always.INER_SQUARE_COLOR, pygame.Rect(485, 470, 210, 160))
     pygame.draw.rect(screen_3, always.INER_SQUARE_COLOR, pygame.Rect(835, 470, 210, 160))
     return
-def text():
+def text_3():
     Font = pygame.font.SysFont(always.FONT_NAME, 50)
     Math = Font.render("Math", True, always.FONT_COLOR)
     screen_3.blit(Math, (125, 175))

@@ -15,11 +15,11 @@ def draw_text(text, font, text_col, x, y):
     txt = font.render(text, True, text_col)
     screen1.blit(txt, (x, y))
 
-
+start = []
 def draw_screen_1():
+    global start
     always.SCREEN_1.fill(always.BACKGROUND_COLOR)
-    pygame.draw.rect(screen1, always.SQUARE_COLOR,
-    pygame.draw.rect(screen1, always.SQUARE_COLOR, pygame.Rect(RECT_LOCATION_X, RECT_LOCATION_Y, RECT_WIDTH, RECT_LENGTH)))
+    start = pygame.draw.rect(screen1, always.SQUARE_COLOR, pygame.Rect(RECT_LOCATION_X, RECT_LOCATION_Y, RECT_WIDTH, RECT_LENGTH))
     draw_text("Begin Helping Process", text_font, always.FONT_COLOR, RECT_LOCATION_X + 200, RECT_LOCATION_Y + 70)
     draw_text("Welcome to the helping center !", text_font, always.FONT_COLOR, 300, 100)
     pygame.display.flip()

@@ -33,6 +33,7 @@ def draw_outside_rect():
     pygame.draw.rect(screen_3, always.SQUARE_COLOR, pygame.Rect(115, 450, 250, 200))
     pygame.draw.rect(screen_3, always.SQUARE_COLOR, pygame.Rect(465, 450, 250, 200))
     pygame.draw.rect(screen_3, always.SQUARE_COLOR, pygame.Rect(815, 450, 250, 200))
+    return
 
 def draw_iner_rect():
     pygame.draw.rect(screen_3, always.INER_SQUARE_COLOR, pygame.Rect(70, 120, 210, 160))
@@ -42,6 +43,7 @@ def draw_iner_rect():
     pygame.draw.rect(screen_3, always.INER_SQUARE_COLOR, pygame.Rect(135, 470, 210, 160))
     pygame.draw.rect(screen_3, always.INER_SQUARE_COLOR, pygame.Rect(485, 470, 210, 160))
     pygame.draw.rect(screen_3, always.INER_SQUARE_COLOR, pygame.Rect(835, 470, 210, 160))
+    return
 def text():
     Font = pygame.font.SysFont(always.FONT_NAME, 50)
     Math = Font.render("Math", True, always.FONT_COLOR)

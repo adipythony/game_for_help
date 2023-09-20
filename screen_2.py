@@ -19,11 +19,11 @@ def squares():
     return
 
 def text():
-    font = pygame.font.SysFont(always.FONT_NAME, 50)
+    font = pygame.font.SysFont(always.FONT_NAME, 97)
     helping = font.render("Helper", True, always.FONT_COLOR)
-    screen2.blit(helping, (250, 340))
+    screen2.blit(helping, (195, 340))
     helped = font.render("Need Help", True, always.FONT_COLOR)
-    screen2.blit(helped, (825, 340))
+    screen2.blit(helped, (720, 340))
     return
 
 while True:

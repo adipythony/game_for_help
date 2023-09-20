@@ -25,6 +25,3 @@ def text():
     helped = font.render("Need Help", True, always.FONT_COLOR)
     screen2.blit(helped, (720, 340))
     return
-
-while True:
-    background()

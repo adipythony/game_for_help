@@ -15,4 +15,5 @@ INER_SQUARE_COLOR = (173, 216, 230)
 FONT_COLOR = (255, 255, 255)
 FONT_NAME = "Calibri"
 
-SUBJECT_LIST = ["Math", "English", "Literature", "Bible", "Citizenship", "History", "Hebrew"]
+SUBJECT_LIST = {"Math": [], "English": [], "Literature": [], "Bible": [], "Citizenship": [], "History": [], "Hebrew": []}
+

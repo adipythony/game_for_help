@@ -9,7 +9,6 @@ outside_rect_x = 50
 iner_rect_y = 100
 
 
-y = 150
 MATH = pygame.Rect((outside_rect_x, iner_rect_y), (outside_rect_size_x + outside_rect_x, outside_rect_size_y + iner_rect_y))
 ENGLISH = pygame.Rect((outside_rect_x + 300, iner_rect_y), (outside_rect_size_x + outside_rect_x + 300, outside_rect_size_y + iner_rect_y))
 HISTORY = pygame.Rect((outside_rect_x + 600, iner_rect_y), (outside_rect_size_x + outside_rect_x + 600, outside_rect_size_y + iner_rect_y))

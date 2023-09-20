@@ -1,16 +1,20 @@
-# This is a sample Python script.
+import pygame
+import screen_1
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+state = {"running": True}
+def main():
+    pygame.init()
+    screen_1.draw_screen_1()
+    while state["running"]:
+        event()
 
+def event():
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            state["running"] = False
+        elif event.type == pygame.MOUSEBUTTONUP:
+            pos = pygame.mouse.get_pos()
+            if
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+main()

@@ -1,6 +1,7 @@
 import pygame
 import screen_1
 import screen_2
+import screen_3
 
 state = {"running": True}
 
@@ -21,5 +22,10 @@ def event():
             pos = pygame.mouse.get_pos()
             if screen_1.start.collidepoint(pos):
                 screen_2.background()
+                # for event2 in pygame.event.get():
+                #     if event2.type == pygame.MOUSEBUTTONUP:
+                #         pos = pygame.mouse.get_pos()
+                #         # if screen_2.collidepoint(pos2):
+
 
 main()

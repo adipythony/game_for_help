@@ -6,17 +6,11 @@ y = 150
 
 def open_screen_3():
     pygame.init()
-    dict_3 = {'running' : True}
     screen_3.fill(always.BACKGROUND_COLOR)
     draw_outside_rect_3()
     draw_iner_rect_3()
     text_3()
     pygame.display.flip()
-    while dict_3['running']:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                dict_3['running'] = False
-    return always.SCREEN_3
 
 
 
@@ -58,4 +52,3 @@ def text_3():
     pygame.display.flip()
     return
 
-open_screen_3()

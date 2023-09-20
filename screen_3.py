@@ -3,13 +3,8 @@ import pygame
 screen_3 = always.SCREEN_3
 x = 150
 y = 150
-# text_font = pygame.font.SysFont(always.FONT_NAME, 50)
-# text = text_font.render('Math', True, always.FONT_COLOR, always.INER_SQUARE_COLOR)
-# textRect = text.get_rect()
-# textRect.center = (x // 2, y // 2)
-# always.SCREEN_3.blit(text, textRect)
 
-def open_screen_3():
+def open_screen_3(SCREEN_3):
     pygame.init()
     dict_3 = {'running' : True}
     screen_3.fill(always.BACKGROUND_COLOR)

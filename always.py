@@ -17,5 +17,6 @@ FONT_NAME = "freesansbold.ttf"
 
 next = 1
 
-SUBJECT_LIST = {"Math": [], "English": [], "Literature": [], "Bible": [], "Citizenship": [], "History": [], "Hebrew": []}
+SUBJECT_LIST = {"Math": 0, "English": 1, "Literature": 2, "Bible": 5, "Citizenship": 6, "History": 2, "Hebrew": 4}
 PEOPLE_LIST = [[], [], [], [], [], [], []]
+subject = 7

@@ -1,9 +1,22 @@
 import always
 import pygame
 screen_3 = always.SCREEN_3
-x = 150
-y = 150
+outside_rect_size_x = 250
+outside_rect_size_y = 200
+iner_rect_size_x = 210
+iner_rect_size_y = 160
+outside_rect_x = 50
+iner_rect_y = 100
 
+
+y = 150
+MATH = pygame.Rect((outside_rect_x, iner_rect_y), (outside_rect_size_x + outside_rect_x, outside_rect_size_y + iner_rect_y))
+ENGLISH = pygame.Rect((outside_rect_x + 300, iner_rect_y), (outside_rect_size_x + outside_rect_x + 300, outside_rect_size_y + iner_rect_y))
+HISTORY = pygame.Rect((outside_rect_x + 600, iner_rect_y), (outside_rect_size_x + outside_rect_x + 600, outside_rect_size_y + iner_rect_y))
+Hebrew = pygame.Rect((outside_rect_x + 900, iner_rect_y), (outside_rect_size_x + outside_rect_x + 900, outside_rect_size_y + iner_rect_y))
+BIBLE = pygame.Rect((outside_rect_x + 65, iner_rect_y + 350), (outside_rect_size_x + outside_rect_x + 65, outside_rect_size_y + iner_rect_y + 350))
+LITERATURE = pygame.Rect((outside_rect_x + 415, iner_rect_y + 350), (outside_rect_size_x + outside_rect_x + 415, outside_rect_size_y + iner_rect_y + 350))
+CITIZENSHIP = pygame.Rect((outside_rect_x + 765, iner_rect_y + 350), (outside_rect_size_x + outside_rect_x + 765, outside_rect_size_y + iner_rect_y + 350))
 def open_screen_3():
     pygame.init()
     screen_3.fill(always.BACKGROUND_COLOR)
@@ -48,9 +61,9 @@ def text_3():
     screen_3.blit(Hebrew, (995, 175))
     Bible = Font.render("Bible", True, always.FONT_COLOR)
     screen_3.blit(Bible, (190, 525))
-    literature = Font.render("literature", True, always.FONT_COLOR)
-    screen_3.blit(literature, (500, 525))
-    citizenship = Font.render("citizenship", True, always.FONT_COLOR)
-    screen_3.blit(citizenship, (835, 525))
+    Literature = Font.render("Literature", True, always.FONT_COLOR)
+    screen_3.blit(Literature, (500, 525))
+    Citizenship = Font.render("Citizenship", True, always.FONT_COLOR)
+    screen_3.blit(Citizenship, (835, 525))
     pygame.display.flip()
     return

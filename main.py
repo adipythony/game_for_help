@@ -26,16 +26,16 @@ def event():
                if screen_1.start.collidepoint(pos):
                     screen_2.background()
                     always.next = 2
-    event_2()
+        else:
+            event_2(event)
 
 
-def event_2():
+def event_2(event):
     if always.next == 2:
-        for event2 in pygame.event.get():
-            if event2.type == pygame.MOUSEBUTTONUP:
-                pos2 = pygame.mouse.get_pos()
-                if screen_2.helped.collidepoint(pos2) or screen_2.helper.collidepoint(pos2):
-                    screen_1.draw_screen_1()
+        if event.type == pygame.MOUSEBUTTONUP:
+            pos2 = pygame.mouse.get_pos()
+            if screen_2.helped.collidepoint(pos2) or screen_2.helper.collidepoint(pos2):
+                screen_1.draw_screen_1()
 
 
 main()

@@ -4,7 +4,7 @@ import pygame
 pygame.init()
 screen2 = always.SCREEN_2
 helper = pygame.Rect((100, 125), (550, 625))
-helped = pygame.Rect(())
+helped = pygame.Rect((700, 125), (1150, 625))
 
 def background():
     screen2.fill(always.BACKGROUND_COLOR)

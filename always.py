@@ -9,11 +9,11 @@ SCREEN_5 = pygame.display.set_mode((WIDTH, HEIGHT))
 SCREEN_6 = pygame.display.set_mode((WIDTH, HEIGHT))
 SCREEN_7 = pygame.display.set_mode((WIDTH, HEIGHT))
 
-BACKGROUND_COLOR = (143, 188, 143)
-SQUARE_COLOR = (83, 134, 139)
-INER_SQUARE_COLOR = (173, 216, 230)
+BACKGROUND_COLOR = (230, 230, 250)
+SQUARE_COLOR = (137, 104, 205)
+INER_SQUARE_COLOR = (171,130,255)
 FONT_COLOR = (255, 255, 255)
-FONT_NAME = "freesansbold.ttf"
+FONT_NAME = "georgia"
 
 next = 1
 

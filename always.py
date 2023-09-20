@@ -7,7 +7,7 @@ SCREEN_3 = pygame.display.set_mode((WIDTH, HEIGHT))
 SCREEN_4 = pygame.display.set_mode((WIDTH, HEIGHT))
 SCREEN_5 = pygame.display.set_mode((WIDTH, HEIGHT))
 SCREEN_6 = pygame.display.set_mode((WIDTH, HEIGHT))
-
+SCREEN_7 = pygame.display.set_mode((WIDTH, HEIGHT))
 
 BACKGROUND_COLOR = (143, 188, 143)
 SQUARE_COLOR = (83, 134, 139)

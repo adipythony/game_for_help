@@ -1,5 +1,5 @@
 import pygame
-WIDTH = 1000
+WIDTH = 1250
 HEIGHT = 750
 SCREEN_1 = pygame.display.set_mode((WIDTH, HEIGHT))
 SCREEN_2 = pygame.display.set_mode((WIDTH, HEIGHT))

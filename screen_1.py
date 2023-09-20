@@ -33,9 +33,11 @@ def draw_screen_1():
     #             dict_1['running'] = False
     # return always.SCREEN_1
 
+
 def draw_outside_rect_1():
     pygame.draw.rect(screen_1, always.SQUARE_COLOR, pygame.Rect(RECT_LOCATION_X, RECT_LOCATION_Y, RECT_WIDTH, RECT_LENGTH))
     pygame.draw.rect(screen_1, always.SQUARE_COLOR, pygame.Rect((200, 100), (850, 270)))
+
 
 def draw_iner_rect_1():
     pygame.draw.rect(screen_1, always.INER_SQUARE_COLOR, pygame.Rect(RECT_LOCATION_X + 20, RECT_LOCATION_Y + 20, RECT_WIDTH - 40, RECT_LENGTH - 40))

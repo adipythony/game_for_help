@@ -18,4 +18,4 @@ FONT_NAME = "Calibri"
 next = 1
 
 SUBJECT_LIST = {"Math": [], "English": [], "Literature": [], "Bible": [], "Citizenship": [], "History": [], "Hebrew": []}
-
+PEOPLE_LIST = [[], [], [], [], [], [], []]

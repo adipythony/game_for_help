@@ -4,6 +4,7 @@ screen_3 = always.SCREEN_3
 x = 150
 y = 150
 
+
 def open_screen_3():
     pygame.init()
     screen_3.fill(always.BACKGROUND_COLOR)
@@ -11,7 +12,6 @@ def open_screen_3():
     draw_iner_rect_3()
     text_3()
     pygame.display.flip()
-
 
 
 def draw_outside_rect_3():

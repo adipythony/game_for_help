@@ -15,5 +15,7 @@ INER_SQUARE_COLOR = (173, 216, 230)
 FONT_COLOR = (255, 255, 255)
 FONT_NAME = "freesansbold.ttf"
 
-SUBJECT_DICT = {"Math": 0, "English": 1, "History": 2, "Hebrew": 3, "Bible": 4, "Literature": 5, "Citizenship": 6}
+next = 1
+
+SUBJECT_LIST = {"Math": [], "English": [], "Literature": [], "Bible": [], "Citizenship": [], "History": [], "Hebrew": []}
 PEOPLE_LIST = [[], [], [], [], [], [], []]

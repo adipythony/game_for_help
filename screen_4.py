@@ -1,6 +1,7 @@
 import pygame
 import sys
 import always
+import screen_1
 
 
 pygame.init()
@@ -53,8 +54,8 @@ while True:
             else:
                 user_text += event.unicode
 
-    # it will set background color of screen
     screen4.fill(always.BACKGROUND_COLOR)
+    screen_1.draw_text("Enter your email: ", screen_1.text_font, always.FONT_COLOR, 300, 300)
 
     if active:
         color = color_active

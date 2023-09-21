@@ -27,10 +27,10 @@ def draw_iner_rect_5():
 
 
 def text_5():
-    Font = pygame.font.SysFont(always.FONT_NAME, 55)
+    Font = pygame.font.SysFont(always.FONT_NAME, 50)
     text = Font.render("We will look for your best MATCH!", True, always.FONT_COLOR)
-    screen_5.blit(text, (245, 275))
+    screen_5.blit(text, (240, 285))
     Font_2 = pygame.font.SysFont(always.FONT_NAME, 80)
     text_2 = Font_2.render("Good Luck!", True, always.FONT_COLOR)
-    screen_5.blit(text_2, (420, 400))
-open_screen_5()
+    screen_5.blit(text_2, (415, 400))
+# open_screen_5()

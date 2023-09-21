@@ -9,6 +9,7 @@ outside_rect_size_y = 370
 
 def open_screen_7():
     pygame.init()
+    # dict_7 = {'running': True}
     screen_7.fill(always.BACKGROUND_COLOR)
     pygame.draw.rect(screen_7, always.SQUARE_COLOR, pygame.Rect(outside_rect_x, outside_rect_y, outside_rect_size_x, outside_rect_size_y))
     pygame.draw.rect(screen_7, always.INER_SQUARE_COLOR, pygame.Rect(outside_rect_x + 20, outside_rect_y + 20, outside_rect_size_x - 40, outside_rect_size_y - 40))
@@ -19,6 +20,10 @@ def open_screen_7():
     text_7_1 = Font1.render("Come again in the future!", True, always.FONT_COLOR)
     screen_7.blit(text_7_1, (305, 395))
     pygame.display.flip()
-    return always.SCREEN_7
+    # while dict_7['running']:
+    #     for event in pygame.event.get():
+    #         if event.type == pygame.QUIT:
+    #             dict_7['running'] = False
+    # return always.SCREEN_7
 
 open_screen_7()

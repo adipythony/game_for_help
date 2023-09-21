@@ -27,10 +27,12 @@ color_passive = pygame.Color(always.SQUARE_COLOR)
 color = color_passive
 
 active = False
+mail_list = []
 
 
 def is_enter(user_text):
-    always.PEOPLE_LIST[always.subject].append(user_text)
+    mail_list.append(user_text)
+    # user_text =
 
 
 while True:
@@ -50,9 +52,7 @@ while True:
         if event.type == pygame.KEYDOWN:
 
             if event.type == pygame.K_RETURN:
-                is_enter(user_text)
-                screen_5
-                break
+
 
             # Check for backspace
             if event.key == pygame.K_BACKSPACE:

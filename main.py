@@ -28,6 +28,7 @@ def event():
         else:
             event_2(event)
 
+
 def event_2(event):
     if always.next == 2:
         if event.type == pygame.MOUSEBUTTONUP:
@@ -50,7 +51,6 @@ def event_2(event):
             always.next = 3
     else:
         event_3(event)
-
 
 
 def event_3(event):

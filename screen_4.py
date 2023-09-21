@@ -52,10 +52,10 @@ while True:
 
         if event.type == pygame.KEYDOWN:
 
-            if event.type == pygame.K_RETURN:
+            if event.key == pygame.K_RETURN:
                 is_enter(user_text)
                 screen_5.open_screen_5()
-                break
+
 
             # Check for backspace
             if event.key == pygame.K_BACKSPACE:

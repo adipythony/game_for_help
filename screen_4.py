@@ -31,7 +31,7 @@ mail_list = []
 
 def is_enter(user_text):
     mail_list.append(user_text)
-    user_text =
+    # user_text =
 
 
 while True:

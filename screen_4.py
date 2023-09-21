@@ -32,8 +32,9 @@ active = False
 
 def is_enter(user_text):
     always.PEOPLE_LIST[always.subject].append(user_text)
+    screen_5.open_screen_5()
     # mail_list.append(user_text)
-    print(always.PEOPLE_LIST)
+
 
 
 while True:
@@ -54,8 +55,7 @@ while True:
 
             if event.key == pygame.K_RETURN:
                 is_enter(user_text)
-                screen_5.open_screen_5()
-                main.main()
+
 
 
             # Check for backspace

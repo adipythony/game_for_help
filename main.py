@@ -21,8 +21,8 @@ def event():
             state["running"] = False
         if always.next == 1:
             if event.type == pygame.MOUSEBUTTONUP:
-               pos = pygame.mouse.get_pos()
-               if screen_1.start.collidepoint(pos):
+                pos = pygame.mouse.get_pos()
+                if screen_1.start.collidepoint(pos):
                     screen_3.open_screen_3()
                     always.next = 2
         else:

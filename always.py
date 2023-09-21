@@ -18,5 +18,5 @@ FONT_NAME = "georgia"
 next = 1
 
 SUBJECT_LIST = {"Math": 0, "English": 1, "Literature": 2, "Bible": 5, "Citizenship": 6, "History": 2, "Hebrew": 4}
-PEOPLE_LIST = [[], [], [], [], [], [], []]
+PEOPLE_LIST = [[0], [0], [0], [0], [0], [0], [0]]
 subject = 6

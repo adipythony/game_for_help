@@ -9,7 +9,7 @@ iner_rect_size_y = outside_rect_size_y - 40
 outside_rect_x = 100
 outside_rect_y = 100
 
-text3 = pygame.Rect(screen_6, always.SQUARE_COLOR, pygame.Rect(outside_rect_x + 300, 520, outside_rect_size_x - 600 + outside_rect_x + 300, outside_rect_size_y - 20 + 520))
+# text3 = pygame.Rect(screen_6, always.SQUARE_COLOR, pygame.Rect(outside_rect_x + 300, 520, outside_rect_size_x - 600 + outside_rect_x + 300, outside_rect_size_y - 20 + 520))
 
 
 def open_screen_6():
@@ -42,4 +42,6 @@ def text_6():
     Font1 = pygame.font.SysFont(always.FONT_NAME, 50)
     text2 = Font1.render("Your MATCH is:", True, always.FONT_COLOR)
     screen_6.blit(text2, (430, 357))
-open_screen_6()
+    Font2 = pygame.font.SysFont((always.FONT_NAME, 45))
+    text3 =
+

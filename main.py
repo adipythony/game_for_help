@@ -1,3 +1,5 @@
+import time
+
 import pygame
 import always
 import screen_1
@@ -68,7 +70,9 @@ def event_3(event):
                     screen_6.open_screen_6()
                 else:
                     screen_7.open_screen_7()
-
+            always.next = 1
+            time.sleep(10)
+            main()
 
 
 main()

@@ -14,16 +14,17 @@ outside_rect_y = 100
 
 def open_screen_6():
     pygame.init()
-    dict_6 = {'running': True}
+    # dict_6 = {'running': True}
     screen_6.fill(always.BACKGROUND_COLOR)
     draw_outside_rect_6()
     draw_iner_rect_6()
     text_6()
     pygame.display.flip()
-    while dict_6['running']:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                dict_6['running'] = False
+    # always.PEOPLE_LIST[always.subject].remove(always.PEOPLE_LIST[always.PEOPLE_LIST][1])
+    # while dict_6['running']:
+    #     for event in pygame.event.get():
+    #         if event.type == pygame.QUIT:
+    #             dict_6['running'] = False
 
 def draw_outside_rect_6():
     pygame.draw.rect(screen_6, always.SQUARE_COLOR, pygame.Rect(outside_rect_x, outside_rect_y, outside_rect_size_x, outside_rect_size_y))

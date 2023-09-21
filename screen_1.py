@@ -4,10 +4,10 @@ import pygame
 pygame.init()
 screen_1 = always.SCREEN_1
 
-text_font = pygame.font.SysFont(always.FONT_NAME, 48)
+text_font = pygame.font.SysFont(always.FONT_NAME, 43)
 RECT_WIDTH = 480
 RECT_LENGTH = 185
-RECT_LOCATION_X = 405
+RECT_LOCATION_X = 400
 RECT_LOCATION_Y = 430
 start = pygame.Rect((RECT_LOCATION_X, RECT_LOCATION_Y), (RECT_LOCATION_X + RECT_WIDTH, RECT_LOCATION_Y + RECT_LENGTH))
 
@@ -24,15 +24,14 @@ def draw_screen_1():
     draw_outside_rect_1()
     draw_iner_rect_1()
     draw_text("Begin Helping Process", text_font, always.FONT_COLOR, RECT_LOCATION_X + 25, RECT_LOCATION_Y + 70)
-    text_font2 = pygame.font.SysFont(always.FONT_NAME, 60)
-    draw_text("Welcome to the helping center!", text_font2, always.FONT_COLOR, 250, 200)
+    text_font2 = pygame.font.SysFont(always.FONT_NAME, 57)
+    draw_text("Welcome to the helping center!", text_font2, always.FONT_COLOR, 230, 200)
     pygame.display.flip()
     # while dict_1['running']:
     #     for event in pygame.event.get():
     #         if event.type == pygame.QUIT:
     #             dict_1['running'] = False
-    # return always.SCREEN_1
-
+    return always.SCREEN_1
 
 def draw_outside_rect_1():
     pygame.draw.rect(screen_1, always.SQUARE_COLOR, pygame.Rect(RECT_LOCATION_X, RECT_LOCATION_Y, RECT_WIDTH, RECT_LENGTH))

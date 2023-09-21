@@ -8,10 +8,15 @@ helped = pygame.Rect((700, 125), (1150, 625))
 
 
 def background():
+    # dict_2 = {'running': True}
     screen2.fill(always.BACKGROUND_COLOR)
     squares()
     text()
     pygame.display.flip()
+    # while dict_2['running']:
+    #     for event in pygame.event.get():
+    #         if event.type == pygame.QUIT:
+    #             dict_2['running'] = False
 
 
 def squares():
@@ -24,9 +29,9 @@ def squares():
 
 
 def text():
-    font = pygame.font.SysFont(always.FONT_NAME, 97)
+    font = pygame.font.SysFont(always.FONT_NAME, 80)
     helping = font.render("Helper", True, always.FONT_COLOR)
     screen2.blit(helping, (195, 340))
     helped = font.render("Need Help", True, always.FONT_COLOR)
-    screen2.blit(helped, (720, 340))
+    screen2.blit(helped, (738, 340))
     return

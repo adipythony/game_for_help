@@ -18,11 +18,16 @@ LITERATURE = pygame.Rect((outside_rect_x + 415, outside_rect_y + 350), (outside_
 CITIZENSHIP = pygame.Rect((outside_rect_x + 765, outside_rect_y + 350), (outside_rect_size_x + outside_rect_x + 765, outside_rect_size_y + outside_rect_y + 350))
 def open_screen_3():
     pygame.init()
+    # dict_3 = {'running': True}
     screen_3.fill(always.BACKGROUND_COLOR)
     draw_outside_rect_3()
     draw_iner_rect_3()
     text_3()
     pygame.display.flip()
+    # while dict_3['running']:
+    #     for event in pygame.event.get():
+    #         if event.type == pygame.QUIT:
+    #             dict_3['running'] = False
 
 
 
@@ -49,20 +54,20 @@ def draw_iner_rect_3():
 
 
 def text_3():
-    Font = pygame.font.SysFont(always.FONT_NAME, 50)
+    Font = pygame.font.SysFont(always.FONT_NAME, 40)
     Math = Font.render("Math", True, always.FONT_COLOR)
     screen_3.blit(Math, (125, 175))
     English = Font.render("English", True, always.FONT_COLOR)
     screen_3.blit(English, (405, 175))
     History = Font.render("History", True, always.FONT_COLOR)
-    screen_3.blit(History, (700, 175))
+    screen_3.blit(History, (710, 175))
     Hebrew = Font.render("Hebrew", True, always.FONT_COLOR)
-    screen_3.blit(Hebrew, (995, 175))
+    screen_3.blit(Hebrew, (1005, 175))
     Bible = Font.render("Bible", True, always.FONT_COLOR)
     screen_3.blit(Bible, (190, 525))
     Literature = Font.render("Literature", True, always.FONT_COLOR)
     screen_3.blit(Literature, (500, 525))
     Citizenship = Font.render("Citizenship", True, always.FONT_COLOR)
-    screen_3.blit(Citizenship, (835, 525))
+    screen_3.blit(Citizenship, (840, 525))
     pygame.display.flip()
     return

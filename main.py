@@ -61,7 +61,7 @@ def event_3(event):
         if event.type == pygame.MOUSEBUTTONUP:
             pos3 = pygame.mouse.get_pos()
             if screen_2.helped.collidepoint(pos3):
-                screen_4.screen4
+                screen_4.open_screen_4()
             if screen_2.helper.collidepoint(pos3):
                 if type(always.PEOPLE_LIST[always.subject][1]) == str:
                     screen_6.open_screen_6()

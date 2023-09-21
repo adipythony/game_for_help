@@ -3,7 +3,7 @@ import sys
 import always
 import main
 import screen_1
-
+import screen_5
 
 pygame.init()
 
@@ -27,16 +27,13 @@ color_passive = pygame.Color(always.SQUARE_COLOR)
 color = color_passive
 
 active = False
-mail_list = []
+# mail_list = []
 
 
 def is_enter(user_text):
-<<<<<<< HEAD
     always.PEOPLE_LIST[always.subject].append(user_text)
-=======
-    mail_list.append(user_text)
-    # user_text =
->>>>>>> origin/main
+    # mail_list.append(user_text)
+    print(always.PEOPLE_LIST)
 
 
 while True:
@@ -57,7 +54,8 @@ while True:
 
             if event.type == pygame.K_RETURN:
                 is_enter(user_text)
-                main.main()
+                screen_5.open_screen_5()
+                break
 
             # Check for backspace
             if event.key == pygame.K_BACKSPACE:

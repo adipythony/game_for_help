@@ -27,56 +27,58 @@ color = color_passive
 
 active = False
 
-while True:
-    for event in pygame.event.get():
 
-        # if user types QUIT then the screen will close
-        if event.type == pygame.QUIT:
-            pygame.quit()
-            sys.exit()
+def screen_4():
+    while True:
+        for event in pygame.event.get():
 
-        if event.type == pygame.MOUSEBUTTONDOWN:
-            if input_rect.collidepoint(event.pos):
-                active = True
-            else:
-                active = False
+            # if user types QUIT then the screen will close
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
 
-        if event.type == pygame.KEYDOWN:
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if input_rect.collidepoint(event.pos):
+                    active = True
+                else:
+                    active = False
 
-            # Check for backspace
-            if event.key == pygame.K_BACKSPACE:
+            if event.type == pygame.KEYDOWN:
 
-                # get text input from 0 to -1 i.e. end.
-                user_text = user_text[:-1]
+                # Check for backspace
+                if event.key == pygame.K_BACKSPACE:
 
-            # Unicode standard is used for string
-            # formation
-            else:
-                user_text += event.unicode
+                    # get text input from 0 to -1 i.e. end.
+                    user_text = user_text[:-1]
 
-    screen4.fill(always.BACKGROUND_COLOR)
-    screen_1.draw_text("Enter your email: ", screen_1.text_font, always.FONT_COLOR, 300, 300)
+                # Unicode standard is used for string
+                # formation
+                else:
+                    user_text += event.unicode
 
-    if active:
-        color = color_active
-    else:
-        color = color_passive
+        screen4.fill(always.BACKGROUND_COLOR)
+        screen_1.draw_text("Enter your email: ", screen_1.text_font, always.FONT_COLOR, 300, 300)
 
-    # draw rectangle and argument passed which should
-    # be on screen
-    pygame.draw.rect(screen4, color, input_rect)
+        if active:
+            color = color_active
+        else:
+            color = color_passive
 
-    text_surface = base_font.render(user_text, True, (255, 255, 255))
+        # draw rectangle and argument passed which should
+        # be on screen
+        pygame.draw.rect(screen4, color, input_rect)
 
-    # render at position stated in arguments
-    screen4.blit(text_surface, (input_rect.x + 5, input_rect.y + 5))
+        text_surface = base_font.render(user_text, True, (255, 255, 255))
 
-    # set width of textfield so that text cannot get
-    # outside of user's text input
-    input_rect.w = max(100, text_surface.get_width() + 10)
+        # render at position stated in arguments
+        screen4.blit(text_surface, (input_rect.x + 5, input_rect.y + 5))
 
-    # display.flip() will update only a portion of the
-    # screen to updated, not full area
-    pygame.display.flip()
+        # set width of textfield so that text cannot get
+        # outside of user's text input
+        input_rect.w = max(100, text_surface.get_width() + 10)
 
-    clock.tick(60)
+        # display.flip() will update only a portion of the
+        # screen to updated, not full area
+        pygame.display.flip()
+
+        clock.tick(60)

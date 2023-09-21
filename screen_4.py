@@ -30,13 +30,11 @@ mail_list = []
 
 
 def is_enter(user_text):
-    if pygame.K_RETURN:
-        mail_list.append(user_text)
-        user_text =
+    mail_list.append(user_text)
+    user_text =
 
 
 while True:
-    is_enter()
     for event in pygame.event.get():
 
         # if user types QUIT then the screen will close
@@ -51,6 +49,9 @@ while True:
                 active = False
 
         if event.type == pygame.KEYDOWN:
+
+            if event.type == pygame.K_RETURN:
+
 
             # Check for backspace
             if event.key == pygame.K_BACKSPACE:

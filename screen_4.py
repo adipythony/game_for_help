@@ -55,6 +55,7 @@ while True:
             if event.key == pygame.K_RETURN:
                 is_enter(user_text)
                 screen_5.open_screen_5()
+                main.main()
 
 
             # Check for backspace

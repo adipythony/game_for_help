@@ -26,4 +26,3 @@ def open_screen_7():
     #             dict_7['running'] = False
     # return always.SCREEN_7
 
-open_screen_7()

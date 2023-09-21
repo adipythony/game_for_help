@@ -43,5 +43,6 @@ def text_6():
     text2 = Font1.render("Your MATCH is:", True, always.FONT_COLOR)
     screen_6.blit(text2, (430, 357))
     Font2 = pygame.font.SysFont((always.FONT_NAME, 45))
-    text3 =
+    text3 =Font2.render(always.PEOPLE_LIST[always.subject][1], True, always.FONT_COLOR)
+
 

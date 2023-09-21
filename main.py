@@ -63,7 +63,7 @@ def event_3(event):
             if screen_2.helped.collidepoint(pos3):
                 screen_4.open_screen_4()
             if screen_2.helper.collidepoint(pos3):
-                if type(always.PEOPLE_LIST[always.subject][1]) == str:
+                if len(always.PEOPLE_LIST[always.subject]) != 1:
                     screen_6.open_screen_6()
                 else:
                     screen_7.open_screen_7()

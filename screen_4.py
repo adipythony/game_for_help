@@ -15,14 +15,15 @@ base_font = pygame.font.SysFont(always.FONT_NAME, 32)
 input_rect = pygame.Rect(300, 375, 300, 50)
 color_active = pygame.Color(always.INER_SQUARE_COLOR)
 color_passive = pygame.Color(always.SQUARE_COLOR)
-color = color_passive
 active = False
+color = color_active
+clock = pygame.time.Clock()
 
 def open_screen_4():
     pygame.init()
     screen4.fill(always.BACKGROUND_COLOR)
+    # writing_text()
     screen_1.draw_text("Enter your email: ", screen_1.text_font, always.FONT_COLOR, 300, 300)
-    writing_text()
     pygame.display.flip()
 
 def is_enter(user_text):
@@ -30,10 +31,8 @@ def is_enter(user_text):
 
 
 def writing_text():
+    global active, color, clock
     user_text = ''
-    color = color_passive
-    active = False
-    clock = pygame.time.Clock()
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:

@@ -6,7 +6,7 @@ import screen_1
 import screen_5
 import clock
 
-
+screen4 = always.SCREEN_4
 RECT_WIDTH = 850
 RECT_LENGTH = 200
 RECT_LOCATION_X = (always.WIDTH - RECT_WIDTH) / 2
@@ -21,8 +21,7 @@ active = False
 
 def open_screen_4():
     pygame.init()
-    screen_4 = always.SCREEN_4
-    screen_4.fill(always.BACKGROUND_COLOR)
+    screen4.fill(always.BACKGROUND_COLOR)
     screen_1.draw_text("Enter your email: ", screen_1.text_font, always.FONT_COLOR, 300, 300)
     is_enter(user_text)
     pygame.display.flip()
@@ -54,10 +53,10 @@ def is_enter(user_text):
         else:
             color = color_passive
 
-        pygame.draw.rect(screen_4, color, input_rect)
+        pygame.draw.rect(screen4, color, input_rect)
         text_surface = base_font.render(user_text, True, (255, 255, 255))
-        screen_4.blit(text_surface, (input_rect.x + 5, input_rect.y + 5))
+        screen4.blit(text_surface, (input_rect.x + 5, input_rect.y + 5))
         input_rect.w = max(100, text_surface.get_width() + 10)
         clock.tick(60)
 
-open_screen_4()
+# open_screen_4()

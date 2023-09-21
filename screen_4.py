@@ -31,8 +31,12 @@ mail_list = []
 
 
 def is_enter(user_text):
+<<<<<<< HEAD
+    always.PEOPLE_LIST[always.subject].append(user_text)
+=======
     mail_list.append(user_text)
     # user_text =
+>>>>>>> origin/main
 
 
 while True:
@@ -52,7 +56,8 @@ while True:
         if event.type == pygame.KEYDOWN:
 
             if event.type == pygame.K_RETURN:
-
+                is_enter(user_text)
+                main.main()
 
             # Check for backspace
             if event.key == pygame.K_BACKSPACE:

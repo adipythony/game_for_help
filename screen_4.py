@@ -5,6 +5,8 @@ import main
 import screen_1
 import screen_5
 
+
+
 pygame.init()
 
 clock = pygame.time.Clock()
@@ -36,7 +38,6 @@ def is_enter(user_text):
     # mail_list.append(user_text)
 
 
-
 while True:
     for event in pygame.event.get():
 
@@ -55,7 +56,6 @@ while True:
 
             if event.key == pygame.K_RETURN:
                 is_enter(user_text)
-
 
 
             # Check for backspace

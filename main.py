@@ -33,19 +33,19 @@ def event_2(event):
     if always.next == 2:
         if event.type == pygame.MOUSEBUTTONUP:
             pos2 = pygame.mouse.get_pos()
-            if screen_3.MATH(pos2):
+            if screen_3.MATH.collidepoint(pos2):
                 always.subject = always.SUBJECT_LIST["Math"]
-            if screen_3.BIBLE(pos2):
+            if screen_3.BIBLE.collidepoint(pos2):
                 always.subject = always.SUBJECT_LIST["Bible"]
-            if screen_3.CITIZENSHIP(pos2):
+            if screen_3.CITIZENSHIP.collidepoint(pos2):
                 always.subject = always.SUBJECT_LIST["Citizenship"]
-            if screen_3.ENGLISH(pos2):
+            if screen_3.ENGLISH.collidepoint(pos2):
                 always.subject = always.SUBJECT_LIST["English"]
-            if screen_3.Hebrew(pos2):
+            if screen_3.Hebrew.collidepoint(pos2):
                 always.subject = always.SUBJECT_LIST["Hebrew"]
-            if screen_3.HISTORY(pos2):
+            if screen_3.HISTORY.collidepoint(pos2):
                 always.subject = always.SUBJECT_LIST["History"]
-            if screen_3.LITERATURE(pos2):
+            if screen_3.LITERATURE.collidepoint(pos2):
                 always.subject = always.SUBJECT_LIST["Literature"]
             screen_2.background()
             always.next = 3

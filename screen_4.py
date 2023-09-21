@@ -1,10 +1,10 @@
 import pygame
 import sys
 import always
-import main
 import screen_1
 import screen_5
 import clock
+import time
 
 screen4 = always.SCREEN_4
 RECT_WIDTH = 850
@@ -21,9 +21,10 @@ clock = pygame.time.Clock()
 
 def open_screen_4():
     pygame.init()
-    screen4.fill(always.BACKGROUND_COLOR)
     # writing_text()
+    screen4.fill(always.BACKGROUND_COLOR)
     screen_1.draw_text("Enter your email: ", screen_1.text_font, always.FONT_COLOR, 300, 300)
+    screen_5.open_screen_5()
     pygame.display.flip()
 
 def is_enter(user_text):
@@ -31,7 +32,7 @@ def is_enter(user_text):
 
 
 def writing_text():
-    global active, color, clock
+    # global active, color, clock
     user_text = ''
     while True:
         for event in pygame.event.get():
@@ -54,7 +55,6 @@ def writing_text():
             color = color_active
         else:
             color = color_passive
-
         pygame.draw.rect(screen4, color, input_rect)
         text_surface = base_font.render(user_text, True, (255, 255, 255))
         screen4.blit(text_surface, (input_rect.x + 5, input_rect.y + 5))
